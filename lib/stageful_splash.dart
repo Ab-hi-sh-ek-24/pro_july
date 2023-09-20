@@ -1,16 +1,19 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'dart:async';
+import 'package:flutter/material.dart';import 'package:google_fonts/google_fonts.dart';
+import 'loginpage.dart';
 
-void main() {//to run an app
-  runApp(MaterialApp(  // default theme of our flutter app
-    home: Splashpage(), //initial page to be launched while running an app
-  )); //materialapp // materialapp
-
+void main() {  runApp(MaterialApp(
+  home: Splash2(),));
 }
-class Splashpage extends StatelessWidget{
-  @override
+class Splash2 extends StatefulWidget{
+  @override  State<StatefulWidget> createState() => Splash2State();
+}
+class Splash2State  extends State {
+  @override  void initState() {
+    Timer(Duration(seconds: 4), () {      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login_Page()));
+    });
+    super.initState();  }
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         backgroundColor: Colors.yellow,
         body: Container(
