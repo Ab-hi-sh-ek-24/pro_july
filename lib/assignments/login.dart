@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:pro_july/assignments/regis.dart';
 
