@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: Contact(),));
+  runApp(MaterialApp(home: Contact1(),));
 }
-class Contact extends StatelessWidget {
-  var name=['Amal','Arju','Neeraj','SRC','Aswin','Sayooj','Pranav','Hemanth'];
+class Contact1 extends StatelessWidget {
+  var name=['Amal','Vichu','Arun','Abhi','Suraj','Rahul','Akash','Abhiram'];
   var phn=[9870654321,3435367788,9978675543,8899076545,9887765443,1223344567,4454545455,87878787879];
 
   @override
