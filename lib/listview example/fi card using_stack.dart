@@ -7,8 +7,7 @@ import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 
 void main() {
-  runApp( MaterialApp(
-    home: Ficard(),
+  runApp( MaterialApp(home: Ficard(),
   ));
 }
 
