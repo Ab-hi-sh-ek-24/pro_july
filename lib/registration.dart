@@ -24,7 +24,8 @@ class Registration_Page extends StatelessWidget{
                 hintText: "UserName",
                   labelText: "UserName",
                 prefixIcon: Icon(Icons.account_circle_outlined),
-                border: OutlineInputBorder(                         borderRadius: BorderRadius.all(Radius.circular(15.0))
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15.0))
                 )               ),
             ),             ),
           Padding(

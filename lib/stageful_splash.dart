@@ -10,7 +10,8 @@ class Splash2 extends StatefulWidget{
 }
 class Splash2State  extends State {
   @override  void initState() {
-    Timer(Duration(seconds: 4), () {      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login_Page()));
+    Timer(Duration(seconds: 4), () {
+      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>Login_Page()));
     });
     super.initState();  }
   Widget build(BuildContext context) {
