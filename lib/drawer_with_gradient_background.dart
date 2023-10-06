@@ -66,9 +66,7 @@ class drawer2 extends StatelessWidget {
           leading: Icon(Icons.dashboard),
           title: Text('Dashboard'),
     ),
-
-
-        ListTile(
+                ListTile(
           leading: Icon(Icons.leaderboard_sharp),
           title: Text('Leads'),
         ),
@@ -115,14 +113,5 @@ class drawer2 extends StatelessWidget {
     )
     )
     );
-
-
-
-
-
-
-
-
-
   }
 }
