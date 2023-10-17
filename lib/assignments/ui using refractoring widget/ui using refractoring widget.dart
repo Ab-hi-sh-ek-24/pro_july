@@ -27,14 +27,14 @@ class Grid_with_refractoring_widget extends StatelessWidget {
       body:
       GridView(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing: 10,mainAxisSpacing: 10),
         children: [
-          Custom_Card1(image: const NetworkImage('https://images.unsplash.com/photo-1695753648663-72cc4dd99449?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'),
+          Custom_Card1(image: const NetworkImage('https://mirzacdns3.s3.ap-south-1.amazonaws.com/cache/catalog/RMW0198/1-800x800.jpg'),
             price: '150\$',
             rating: 4.5,
             icon: Icons.favorite_border,
             sale: '506 sales',
             click: (){},
             name: 'Trendy Sports Running Running Shoes For Men ',),
-          Custom_Card1(image: const NetworkImage('https://media.istockphoto.com/id/856317698/photo/black-and-white-retro-men-wrist-watch-on-black-leather-background-old-men-wrist-watch.jpg?s=2048x2048&w=is&k=20&c=f8YAsyV8meV-VAbgGE3KOOq81Ga6E6lrZ07LFPXNyXA='),
+          Custom_Card1(image: const NetworkImage('https://www.google.com/imgres?imgurl=http%3A%2F%2Ffunkytradition.com%2Fcdn%2Fshop%2Fproducts%2F0_Transparent-Mens-Watches-Mechanical-Automatic-Wristwatch-Leather-Strap-Top-Brand-Steampunk-Self-Winding-Clock-Male-montre_29771024-7137-4114-9470-3fd561f6081e.jpg%3Fv%3D1598346965&tbnid=bZMhoKQrSnWjbM&vet=12ahUKEwiy6rGT2fmBAxVE2jgGHQ8yAoYQMyhbegUIARC3Aw..i&imgrefurl=https%3A%2F%2Ffunkytradition.com%2Fproducts%2Ftransparent-mens-watches-mechanical-automatic-wristwatch-leather-strap-watche-funkytradition&docid=mOJqhIGEoonQaM&w=1000&h=1000&q=mens%20watch%20leather%20strap&ved=2ahUKEwiy6rGT2fmBAxVE2jgGHQ8yAoYQMyhbegUIARC3Aw'),
               name:"Men's watch with leather strap ",
               price: '300\$',
               rating: 4,
