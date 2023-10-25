@@ -13,10 +13,12 @@ class RegistrationPage extends StatefulWidget {
 }
 
 class _RegistrationPageState extends State<RegistrationPage> {
+
   final name  = TextEditingController();
   final uname = TextEditingController();
   final pwd   = TextEditingController();
   late SharedPreferences preferences;
+
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
               child: TextField(
                 controller: name,
                 decoration: const InputDecoration(
-                    border: OutlineInputBorder(), hintText: "Name"),
+                    border: OutlineInputBorder(),
+                    hintText: "Name"),
               ),
             ),
             Padding(
@@ -41,7 +44,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
               child: TextField(
                 controller: uname,
                 decoration: const InputDecoration(
-                    border: OutlineInputBorder(), hintText: "UserName"),
+                    border: OutlineInputBorder(),
+                    hintText: "UserName"),
               ),
             ),
             Padding(
@@ -49,7 +53,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
               child: TextField(
                 controller: pwd,
                 decoration: const InputDecoration(
-                    border: OutlineInputBorder(), hintText: "Password"),
+                    border: OutlineInputBorder(),
+                    hintText: "Password"),
               ),
             ),
             ElevatedButton(

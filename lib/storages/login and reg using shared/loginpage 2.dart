@@ -19,6 +19,7 @@ class _LoginPage2 extends State<LoginPage2> {
   final pass = TextEditingController();
   late SharedPreferences preferences;
   late bool newuser;
+
   @override
   void initState() {
     check_if_user_already_login();
@@ -42,12 +43,14 @@ class _LoginPage2 extends State<LoginPage2> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: TextField(
                 controller: uname,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(), hintText: "UserName"),
+                    border: OutlineInputBorder(),
+                    hintText: "UserName"),
               ),
             ),
             Padding(
@@ -55,11 +58,13 @@ class _LoginPage2 extends State<LoginPage2> {
               child: TextField(
                 controller: pass,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(), hintText: "password"),
+                    border: OutlineInputBorder(),
+                    hintText: "password"),
               ),
             ),
             ElevatedButton(
-                onPressed: () => validateandLogin(), child: Text("Login")),
+                onPressed: () => validateandLogin(),
+                child: Text("Login")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).push(MaterialPageRoute(
@@ -84,10 +89,12 @@ class _LoginPage2 extends State<LoginPage2> {
 
     if (storedusername == usename && storedpassword == pwd) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (context) => Home_Shared()));
+          .push(MaterialPageRoute(
+          builder: (context) => Home_Shared()));
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Invalid username or password")));
+          const SnackBar(
+              content: Text("Invalid username or password")));
     }
   }
 }
