@@ -159,11 +159,11 @@ class Profile_ui2 extends StatelessWidget {
                           trailing: Icon(Icons.arrow_forward_ios_sharp),
                         ),
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

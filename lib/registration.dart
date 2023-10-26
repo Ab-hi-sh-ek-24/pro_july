@@ -11,10 +11,15 @@ class Registration_Page extends StatelessWidget{
       body:  Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-        children: [             Image.asset("assets/icon/Lion.png", width:100,height:100,),
-          Text(               "My App July",
-            style: GoogleFonts.cabinSketch(                   fontSize: 30,
-                fontWeight: FontWeight.normal,                   color: Colors.lightBlue
+        children: [
+          Image.asset("assets/icon/Lion.png",
+            width:100,height:100,),
+          Text(
+            "My App July",
+            style: GoogleFonts.cabinSketch(
+                fontSize: 30,
+                fontWeight: FontWeight.normal,
+                color: Colors.lightBlue
             ),
           ),
           Padding(
@@ -30,10 +35,13 @@ class Registration_Page extends StatelessWidget{
             ),             ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: TextField(                 decoration: InputDecoration(
-                hintText: "Email id",                     labelText: "Email id",
+            child: TextField(
+              decoration: InputDecoration(
+                hintText: "Email id",
+                  labelText: "Email id",
                 prefixIcon: Icon(Icons.mail_outlined),
-                border: OutlineInputBorder(                         borderRadius: BorderRadius.all(Radius.circular(15.0))
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15.0))
                 )                 ),
             ),             ),
           Padding(
@@ -42,7 +50,8 @@ class Registration_Page extends StatelessWidget{
             decoration: InputDecoration(
                 hintText: "Password",
                 labelText: "Password",
-                prefixIcon: Icon(Icons.password_sharp),                     border: OutlineInputBorder(
+                prefixIcon: Icon(Icons.password_sharp),
+                border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
                         Radius.circular(15.0))                     )
             ),               ),
@@ -50,10 +59,13 @@ class Registration_Page extends StatelessWidget{
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
-            decoration: InputDecoration(                     hintText: "Confirm Password",
+            decoration: InputDecoration(
+                hintText: "Confirm Password",
                 labelText: "Confirm Password",
-                prefixIcon: Icon(Icons.password_sharp),                     border: OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(15.0))                     )
+                prefixIcon: Icon(Icons.password_sharp),
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(15.0))
+                )
             ),               ),
           ),
           ElevatedButton(onPressed:() {}, child: Text("Login")),
